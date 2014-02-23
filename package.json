@@ -4,6 +4,8 @@
   "author": "James Holmes <32bitkid@gmail.com>",
   "devDependencies": {
     "grunt": "~0.4.2",
-    "grunt-contrib-uglify": "~0.3.2"
+    "grunt-contrib-uglify": "~0.3.2",
+    "docco": "~0.6.3",
+    "grunt-docco": "~0.3.3"
   }
 }
