@@ -2,6 +2,10 @@
 
 Tacky javascript is a simple javascript programatic DOM wrapper and templating engine.
 
+## Documentation
+
+[Annotated Source](http://32bitkid.github.io/tacky-js/docs/tacky.html)
+
 ## Usage
 
 Tacky provides two interfaces: `browser` and `stringer`. The `browser` interface will
