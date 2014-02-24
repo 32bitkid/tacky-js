@@ -944,11 +944,11 @@ to start.    </p>
             </div>
             
             <div class="content"><div class='highlight'><pre>  tacky.tmpl = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(browser, fn)</span> {</span>
-    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">DerivedContext</span><span class="hljs-params">(ctx)</span> {</span> <span class="hljs-keyword">this</span>.ctx = ctx; };
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">DerivedContext</span><span class="hljs-params">(ctx)</span> {</span> <span class="hljs-keyword">this</span>.ctx = ctx; }
     DerivedContext.prototype = browser;
     <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(ctx)</span> {</span>
       <span class="hljs-keyword">return</span> fn.call(ctx, <span class="hljs-keyword">new</span> DerivedContext(ctx));
-    }
+    };
   };
 }).call(<span class="hljs-keyword">this</span>);</pre></div></div>
             

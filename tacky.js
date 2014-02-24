@@ -223,10 +223,10 @@
   
   // > This is a work in progress...
   tacky.tmpl = function(browser, fn) {
-    function DerivedContext(ctx) { this.ctx = ctx; };
+    function DerivedContext(ctx) { this.ctx = ctx; }
     DerivedContext.prototype = browser;
     return function(ctx) {
       return fn.call(ctx, new DerivedContext(ctx));
-    }
+    };
   };
 }).call(this);
