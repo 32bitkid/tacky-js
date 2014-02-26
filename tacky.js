@@ -1,4 +1,8 @@
+/* jshint strict: true, undef: true, unused: true */
+/* global module, exports: true, document, Document, Node */
+
 (function() {
+  "use strict";
   // Base setup
   // ----------
   
